@@ -5,7 +5,7 @@ public class Ticket {
 
         //Kilometers
         System.out.print("Insert how kilometers you wanna travel: ");
-        int km = myScanner.nextInt();
+        int km = Integer.parseInt(myScanner.nextLine());
         System.out.println("You'll run " + km + " kilometers.");
 
         //Age
