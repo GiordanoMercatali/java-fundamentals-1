@@ -10,7 +10,7 @@ public class Ticket {
 
         //Age
         System.out.print("Insert age (discounts for under 18 and over 65): ");
-        int age = myScanner.nextInt();
+        int age = Integer.parseInt(myScanner.nextLine());
         System.out.println("You are " + age + " years old.");
         
         //Ticket Price
