@@ -13,6 +13,9 @@ public class Food {
             arrayLength = 10;
         }
 
+        int midElem = (Integer)arrayLength/2;
+        
+
         String[] foodArray = new String[arrayLength];
         // System.out.println("Array length: " + arrayLength);
 
@@ -22,7 +25,15 @@ public class Food {
         }
 
         for (int j = 0; j < foodArray.length; j++) {
-            System.out.println((j+1) + ". " + foodArray[j]);
+            if(j == 0){
+                System.out.println("Top food: " + foodArray[0]);
+            } else if(j == foodArray.length-1){
+                System.out.println("Worst food: " + foodArray[foodArray.length-1]);
+            } else if(j == midElem){
+                System.out.println("Mid food: " + foodArray[midElem]);
+            }
         }
+
+        System.out.println("Total length" + arrayLength);
     }
 } 
