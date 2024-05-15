@@ -1,7 +1,6 @@
-import java.util.Scanner;
+
 public class FizzBuzz {
     public static void main(String[] args) throws Exception {
-        Scanner myScanner = new Scanner(System.in);
 
         for (int i = 1; i <= 100; i++) {
             
