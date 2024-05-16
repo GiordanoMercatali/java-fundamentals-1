@@ -31,11 +31,12 @@ public class Sequence {
             }
         }
 
+        System.out.print("Max '" + charToCheck + "' streak: ");
         if (streak) {
-            System.out.print("Max char streak: " + counter);
+            System.out.print(counter);
         } else{
-            System.out.print("Max char streak: " + maxCounter);
+            System.out.print(maxCounter);
         }
-        System.out.print(" starting at index: " + streakStartId);
+        System.out.print(", starting at index: " + streakStartId);
     }
 } 
